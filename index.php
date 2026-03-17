@@ -26,7 +26,7 @@
 			   while(c<filas) <!--Aqui no se que condicion es pero supongo que sera cuando se acaben las filas en la base de datos de esa tabla-->
 			   
 				   
-			   <option value="1">Nombre alumno</option>
+			   <option value="idalumno?">Nombre alumno</option>
 		   <!--En el valor se guardara lo que viene siendo el id de cada alumno de la tabla alumnos y el contenido
 					de ese option sera el nombre con el que este relacionado ese id-->
 				
