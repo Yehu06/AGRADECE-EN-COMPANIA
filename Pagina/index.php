@@ -6,7 +6,23 @@
 	$conexion->set_charset("utf8"); 
     return $conexion;
   }
+
+
+
+function Mostrar_Datos()
+	{
+		$conexion = conectar();
+		$sql = "SELECT npuesto, nombre FROM alumnos";
+		$resultado = $conexion->query($sql);
+
+		while($fila = $resultado->fetch_array())
+		{
+			echo '<option value="'.$fila["npuesto"].'">'.$fila["nombre"].'</option>';
+		}
+	}
 ?>
+
+
 
 
 <!DOCTYPE html>
@@ -34,14 +50,8 @@
                 <label>Para</label>
                 <select>
                     <option value="">Selecciona un nombre</option>
-                    <?php
-					$conexion = conectar();
-					$sql = "SELECT npuesto, nombre FROM alumnos";
-					$resultado = $conexion->query($sql);
-
-					while($fila = $resultado->fetch_array()){
-					echo '<option value="'.$fila["npuesto"].'">'.$fila["nombre"].'</option>';
-					}
+					<?php
+                   		Mostrar_Datos();
 					?>
                 </select>
 
