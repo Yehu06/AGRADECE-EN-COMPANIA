@@ -17,12 +17,12 @@
     <div class="formulario">
         <h3>Inicia sesión para continuar</h3>
 
-        <form>
+        <form method="POST" action="inicio_sesion.php">
             <label>Usuario</label>
-            <input type="text" placeholder="Ingresa tu usuario">
+            <input type="text" name="user" placeholder="Ingresa tu usuario"> <!--el name lo usas para luego hacer el $dollar-->
 
             <label>Contraseña</label>
-            <input type="password" placeholder="Ingresa tu contraseña">
+            <input type="password" name="contr" placeholder="Ingresa tu contraseña">
 
             <div class="opciones">
                 <input type="checkbox"> Recordarme
