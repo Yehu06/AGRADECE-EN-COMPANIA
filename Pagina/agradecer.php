@@ -62,7 +62,7 @@ function Mostrar_Datos()
     <nav>
         <a href="agradecer.php">Agradecer</a>
         <a href="#">Recibir</a>
-        <a href="index.html">Cerrar sesión</a>
+        <a href="cerrar.php">Cerrar sesión</a>
     </nav>
 
     <main>
